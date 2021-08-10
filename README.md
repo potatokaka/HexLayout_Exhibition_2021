@@ -1,4 +1,4 @@
-https://potatokaka.github.io/HexLayout_Dashboard_2021/
+https://potatokaka.github.io/HexLayout_Exhibition_2021/
 
 # 網頁切版直播班 Gulp 範例 - 加入 Bootstrap 版本
 
