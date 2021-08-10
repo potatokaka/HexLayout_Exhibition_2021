@@ -1,0 +1,4 @@
+// 隱藏 dropdown 預設的箭頭
+.dropdown-toggle::after {
+    display: none;
+}

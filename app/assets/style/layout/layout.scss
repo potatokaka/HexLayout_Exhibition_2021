@@ -1,0 +1,23 @@
+.navWrapper {
+    min-width: 18.5rem //296px;
+}
+.logo a {
+    display: block;
+    background: url(../images/logo-ANSWER.svg);
+    width: 9.4375rem; //151px; 
+    height: 2.5rem; //40px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.avatar {
+    width: 2.5rem; //40px
+    height: 2.5rem;
+}
+
+// Main
+.main {
+    width: calc(100% - 18.5rem);
+    margin-left: 18.5rem //296px;
+}

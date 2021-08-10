@@ -1,0 +1,21 @@
+.nav-link {
+    position: relative;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+        color: #198754; //$primary;
+    }
+
+    &.active {
+        color: #198754; //$primary;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 0.25rem;
+            height: 2rem;
+            top: 0.5rem; // 0.875rem
+            left: -2rem;
+            background: green;
+        }
+    }
+}

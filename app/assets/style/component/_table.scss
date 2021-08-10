@@ -1,0 +1,14 @@
+.table > :not(caption) > * > * {
+    padding: 1rem 0;
+    vertical-align: middle;
+}
+
+.table thead th {
+    padding: 0.25rem 0;
+}
+
+// Table Hove 和 Active 的背景色
+.table-hover > tbody > tr:hover {
+     --bs-table-accent-bg: $gray-100 !important;
+     background-color: $gray-100 !important;
+}
