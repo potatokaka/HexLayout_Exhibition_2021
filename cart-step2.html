@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Boostrap Index</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+	<link rel="stylesheet" href="./assets/style/all.css">
+
+	<!-- Material Icons -->
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+	
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<!-- Roboto -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+		<!-- Noto Sans -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	
+	<!-- Bootstrap Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+</head>
+
+<body>
+	
+	<header class="border border-gray-600 mb-minus-1">
+		<nav class="navbar  navbar-expand-lg navbar-light p-0">
+			<div class="container position-relative justify-content-between justify-content-lg-end align-items-center">
+				<!-- Logo -->
+				<h1 class="logo ff-arial ff-md-roboto h5 fw-light fw-lighter position-absolute top-50 start-50 translate-middle fs-md-6">
+					<a class="text-primary lh-1" href="./index.html">EXHIBINECTION</a>
+				</h1>
+
+				<!-- Hamburger -->
+				<button class="navbar-toggler mt-1 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Menu -->
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<ul class="navbar-nav ">
+						<li class="nav-item">
+							<a class="text-gray-600 lh-xxl px-7" href="#">Sign in</a>
+						</li>
+						<li class="nav-item">
+							<a class="text-gray-600 lh-xxl px-7" href="#">
+								Sign in
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- Cart -->
+				<a class="text-gray-600 lh-1 px-7 pe-0 py-12" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+					<i class="material-icons position-relative">
+						confirmation_number
+						<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary fs-10 ff-roboto">
+							3
+							<span class="visually-hidden">unread messages</span>
+						</span>
+					</i>
+				</a>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Modal -->
+	<div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+		<div class="offcanvas-header">
+			<h5 id="offcanvasRightLabel" class="fs-3 text-white">Cart List</h5>
+			<button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close">
+				<i class="material-icons-outlined">
+					close
+				</i>
+			</button>
+		</div>
+		<div class="offcanvas-body p-0 px-7 px-md-13 pb-25">
+			<ul class="w-100">
+				<li class="bg-info d-flex h-100 position-relative bg-white rounded-2 px-7 px-md-13 pt-14 pt-md-12 pb-7 pb-md-11 mb-3 mb-md-5">
+					<a href="#" class="position-absolute top-0 start-0">
+						<i class="material-icons-outlined mt-1 ms-1">close</i>
+					</a>
+					<img class="h-cart-thumb object-fit me-7" src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="thumb1">
+					<div class="d-flex flex-column me-auto">
+						<h4 class="fs-7 fw-bold mb-1">2020 台味設計展</h4>
+						<span class="mb04">01 JUN — 31 OCT</span>
+						<span class="text-gray-600 mb-auto">全票</span>
+						<span class="fs-6 fw-bold ">NT$350</span>
+					</div>
+					<div class="input-group  d-flex flex-column flex-md-row justify-content-center align-items-center w-auto">
+						<button class="btn btn-outline-gray-600 border-0 p-0" type="button">
+							<i class="material-icons-outlined text-black">add</i>
+						</button>
+						<input type="text" class="form-control w-input-amount flex-grow-0 border-0 fs-6 text-black py-0 px-0 px-md-1 lh-1 text-center" value="01" aria-label="ticket number">
+						<button class="btn btn-outline-gray-600 border-0 p-0" type="button">
+							<i class="material-icons-outlined text-black">remove</i>
+						</button>
+					</div>
+				</li>
+				<li class="bg-info d-flex h-100 position-relative bg-white rounded-2 px-7 px-md-13 pt-14 pt-md-12 pb-7 pb-md-11 mb-3 mb-md-5">
+					<a href="#" class="position-absolute top-0 start-0">
+						<i class="material-icons-outlined mt-1 ms-1">close</i>
+					</a>
+					<img class="h-cart-thumb object-fit me-7" src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="thumb1">
+					<div class="d-flex flex-column me-auto">
+						<h4 class="fs-7 fw-bold mb-1">2020 台味設計展</h4>
+						<span class="mb04">01 JUN — 31 OCT</span>
+						<span class="text-gray-600 mb-auto">全票</span>
+						<span class="fs-6 fw-bold ">NT$350</span>
+					</div>
+					<div class="input-group  d-flex flex-column flex-md-row justify-content-center align-items-center w-auto">
+						<button class="btn btn-outline-gray-600 border-0 p-0" type="button">
+							<i class="material-icons-outlined text-black">add</i>
+						</button>
+						<input type="text" class="form-control w-input-amount flex-grow-0 border-0 fs-6 text-black py-0 px-0 px-md-1 lh-1 text-center" value="01" aria-label="ticket number">
+						<button class="btn btn-outline-gray-600 border-0 p-0" type="button">
+							<i class="material-icons-outlined text-black">remove</i>
+						</button>
+					</div>
+				</li>
+				<li class="bg-info d-flex h-100 position-relative bg-white rounded-2 px-7 px-md-13 pt-14 pt-md-12 pb-7 pb-md-11 mb-3 mb-md-5">
+					<a href="#" class="position-absolute top-0 start-0">
+						<i class="material-icons-outlined mt-1 ms-1">close</i>
+					</a>
+					<img class="h-cart-thumb object-fit me-7" src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="thumb1">
+					<div class="d-flex flex-column me-auto">
+						<h4 class="fs-7 fw-bold mb-1">2020 台味設計展</h4>
+						<span class="mb04">01 JUN — 31 OCT</span>
+						<span class="text-gray-600 mb-auto">全票</span>
+						<span class="fs-6 fw-bold ">NT$350</span>
+					</div>
+					<div class="input-group  d-flex flex-column flex-md-row justify-content-center align-items-center w-auto">
+						<button class="btn btn-outline-gray-600 border-0 p-0" type="button">
+							<i class="material-icons-outlined text-black">add</i>
+						</button>
+						<input type="text" class="form-control w-input-amount flex-grow-0 border-0 fs-6 text-black py-0 px-0 px-md-1 lh-1 text-center" value="01" aria-label="ticket number">
+						<button class="btn btn-outline-gray-600 border-0 p-0" type="button">
+							<i class="material-icons-outlined text-black">remove</i>
+						</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="position-absolute w-100 left-0 bottom-0 d-flex justify-content-start align-items-center px-13 py-11 bg-black text-white">
+			<span class="fs-6 me-11">小計</span>
+			<span class="fs-6 me-auto">NT$1050</span>
+			<a href="./cart-step1.html" class="btn btn-white text-primary py-3 px-12">前往結帳</a>
+		</div>
+	</div>
+	<!-- end Modal -->
+	
+	<main class="main">
+		
+<div class="container mt-9">
+
+	<!-- Progress Bar -->
+	<div class="row">
+		<div class="col-md-8">
+
+			<div class="row border-top border-2 border-secondary text-center mb-9 mb-md-12 pt-3 g-0 fw-light fs-9 fs-md-8">
+				<div class="col-3 position-relative">
+					<p class="progress-dot solid">確認訂單</p>
+				</div>
+				<div class="col-3 position-relative">
+					<p class="progress-dot active solid">填寫訂購資訊</p>
+				</div>
+				<div class="col-3 position-relative">
+					<p class="progress-dot">填寫付款資訊</p>
+				</div>
+				<div class="col-3 position-relative">
+					<p class="progress-dot">完成訂購</p>
+				</div>
+			</div><!-- .row -->
+
+		</div><!-- .col-md-8 -->
+	</div><!-- .row -->
+	
+
+	<div class="row flex-column-reverse flex-md-row mb-17 mb-md-0">
+		<div class="col-md-8">
+			<!-- Order Items -->
+			<!-- Order Item -->
+			<div class="row align-items-center mb-9 position-relative g-7 g-md-12">
+				<div class="col-6 col-md-3">
+					<img class="h-order-thumb object-fit" src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="thumb1">
+				</div>
+				<div class="col-6 col-md-3">
+					<h4 class="fs-7 fw-bold mb-1">2020 台味設計展</h4>
+					<p class="mb04">01 JUN — 31 OCT</p>
+					<p class="text-gray-600 d-flex align-items-center">
+						全票
+						<input type="text" class="d-md-none form-control w-input-amount flex-grow-0 border-0 fs-6 text-black py-0 px-0 px-md-1 lh-1 text-center" value="1" aria-label="ticket number">
+					</p>
+				</div>
+				<div class="position-absolute end-0 bottom-0 position-md-relative col-md-1 w-auto">
+					<span class="fs-6 fw-bold ">NT$350</span>
+				</div>
+				<div class="d-none d-md-flex col-md-2">
+					<div class="input-group  d-flex flex-column flex-md-row justify-content-center align-items-center w-auto">
+						<button class="btn btn-outline-gray-600 border-0 p-0 invisible" type="button">
+							<i class="material-icons-outlined text-black">add</i>
+						</button>
+						<input type="text" class="form-control w-input-amount flex-grow-0 border-0 fs-6 text-black py-0 px-0 px-md-1 lh-1 text-center" value="1" aria-label="ticket number">
+						<button class="btn btn-outline-gray-600 border-0 p-0 invisible" type="button">
+							<i class="material-icons-outlined text-black">remove</i>
+						</button>
+					</div>
+				</div>
+				<div class="position-absolute end-0 top-0 position-md-relative col-md-2 justify-content-end w-auto">
+					<a href="#" class="invisible">
+						<i class="material-icons-outlined mt-1 ms-1">close</i>
+					</a>
+				</div>
+			</div>
+			<!-- End Order Item -->
+
+			<!-- Order Item -->
+			<div class="row align-items-center mb-9 position-relative g-7 g-md-12">
+				<div class="col-6 col-md-3">
+					<img class="h-order-thumb object-fit" src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="thumb1">
+				</div>
+				<div class="col-6 col-md-3">
+					<h4 class="fs-7 fw-bold mb-1">No.22 線上設計展</h4>
+					<p class="mb04">01 JUN — 31 OCT</p>
+					<p class="text-gray-600 d-flex align-items-center">
+						全票
+						<input type="text" class="d-md-none form-control w-input-amount flex-grow-0 border-0 fs-6 text-black py-0 px-0 px-md-1 lh-1 text-center" value="1" aria-label="ticket number">
+					</p>
+				</div>
+				<div class="position-absolute end-0 bottom-0 position-md-relative col-md-1 w-auto">
+					<span class="fs-6 fw-bold ">NT$350</span>
+				</div>
+				<div class="d-none d-md-flex col-md-2">
+					<div class="input-group  d-flex flex-column flex-md-row justify-content-center align-items-center w-auto">
+						<button class="btn btn-outline-gray-600 border-0 p-0 invisible" type="button">
+							<i class="material-icons-outlined text-black">add</i>
+						</button>
+						<input type="text" class="form-control w-input-amount flex-grow-0 border-0 fs-6 text-black py-0 px-0 px-md-1 lh-1 text-center" value="1" aria-label="ticket number">
+						<button class="btn btn-outline-gray-600 border-0 p-0 invisible" type="button">
+							<i class="material-icons-outlined text-black">remove</i>
+						</button>
+					</div>
+				</div>
+				<div class="position-absolute end-0 top-0 position-md-relative col-md-2 justify-content-end w-auto">
+					<a href="#" class="invisible">
+						<i class="material-icons-outlined mt-1 ms-1">close</i>
+					</a>
+				</div>
+			</div>
+			<!-- End Order Item -->
+
+			<!-- Order Item -->
+			<div class="row align-items-center mb-9 position-relative g-7 g-md-12">
+				<div class="col-6 col-md-3">
+					<img class="h-order-thumb object-fit" src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="thumb1">
+				</div>
+				<div class="col-6 col-md-3">
+					<h4 class="fs-7 fw-bold mb-1">高雄設計節</h4>
+					<p class="mb04">01 JUN — 31 OCT</p>
+					<p class="text-gray-600 d-flex align-items-center">
+						全票
+						<input type="text" class="d-md-none form-control w-input-amount flex-grow-0 border-0 fs-6 text-black py-0 px-0 px-md-1 lh-1 text-center" value="1" aria-label="ticket number">
+					</p>
+				</div>
+				<div class="position-absolute end-0 bottom-0 position-md-relative col-md-1 w-auto">
+					<span class="fs-6 fw-bold ">NT$350</span>
+				</div>
+				<div class="d-none d-md-flex col-md-2">
+					<div class="input-group  d-flex flex-column flex-md-row justify-content-center align-items-center w-auto">
+						<button class="btn btn-outline-gray-600 border-0 p-0 invisible" type="button">
+							<i class="material-icons-outlined text-black">add</i>
+						</button>
+						<input type="text" class="form-control w-input-amount flex-grow-0 border-0 fs-6 text-black py-0 px-0 px-md-1 lh-1 text-center" value="1" aria-label="ticket number">
+						<button class="btn btn-outline-gray-600 border-0 p-0 invisible" type="button">
+							<i class="material-icons-outlined text-black">remove</i>
+						</button>
+					</div>
+				</div>
+				<div class="position-absolute end-0 top-0 position-md-relative col-md-2 justify-content-end w-auto">
+					<a href="#" class="invisible">
+						<i class="material-icons-outlined mt-1 ms-1">close</i>
+					</a>
+				</div>
+			</div>
+			<!-- End Order Item -->
+		</div><!-- .col-md-8 -->
+		
+		<!-- 表單 -->
+		<div class="col-md-4 mb-11 mb-md-5">
+			<h3 class="h6 fw-medium mb-7 mb-md-9">訂購人資訊</h3>
+			<form>
+				<div class="mb-9">
+					<label for="inputEmail1" class="form-label mb-1">Email</label>
+					<input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+					<!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+				</div>
+				<div class="mb-9">
+					<label for="inputName" class="form-label mb-1">姓名</label>
+					<input type="text" class="form-control" id="inputName" aria-describedby="nameHelp" placeholder="請輸入姓名">
+				</div>
+				<div class="mb-9">
+					<label for="inputTel" class="form-label mb-1">聯絡電話</label>
+					<input type="tel" class="form-control" id="inputTel" aria-describedby="telHelp" placeholder="請輸入電話">
+				</div>
+				<div class="mb-18">
+					<label for="inputCoupon" class="form-label mb-1">優惠碼</label>
+					<input type="text" class="form-control" id="inputCoupon" aria-describedby="couponHelp" value="TG87526">
+					<div id="couponHelp" class="form-text text-primary fs-9 text-end">優惠碼已生效</div>
+				</div>
+
+				<p class="d-flex justify-content-between fw-medium mb-1 mb-md-2">
+					小計
+					<span class="fw-light">NT$1050</span>
+				</p>
+				<p class="d-flex justify-content-between fw-medium mb-3 mb-md-2">
+					折扣
+					<span class="fw-light">-NT$50</span>
+				</p>
+				<p class="d-flex justify-content-between fs-6">
+					總金額
+					<span>NT$1000</span>
+				</p>
+				
+				<!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+			  </form>
+		</div><!-- .col-md-4 -->
+	</div><!-- .row -->
+</div><!-- .container -->
+
+<!-- Buttons -->
+<div class="container bg-white">
+	<div class="row justify-content-between align-items-end mb-15">
+		<div class="col-6 col-md-2">
+			<a class="btn btn-outline-primary w-100 py-4" href="./cart-step1.html">返回</a>
+		</div>
+		<div class="col-6 col-md-4">
+			<a class="btn btn-secondary w-100 py-4" href="./cart-step3.html">下一步</a>
+		</div>
+	</div>
+</div>
+
+
+	</main>
+
+
+	<script src="./assets/js/vendors.js"></script>
+
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	
+	<script src="./assets/js/all.js"></script>
+	
+</body>
+
+</html>

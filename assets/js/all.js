@@ -2,17 +2,16 @@
 
 $(function () {
   console.log('Hello Bootstrap5');
-}); // CK Editor
+}); // Swiper
 
-ClassicEditor.create(document.querySelector('#editor')).then(function (editor) {
-  console.log(editor);
-})["catch"](function (error) {
-  console.error(error);
-}); // CK Editor 客製 Toggle
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30
+  /* 移除 pagination */
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
 
-$(document).ready(function () {
-  $('#btn-reply').click(function () {
-    $('.editorWrap').toggleClass('active');
-  });
 });
 //# sourceMappingURL=all.js.map
