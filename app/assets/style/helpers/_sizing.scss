@@ -1,0 +1,61 @@
+.h-subscribe {
+    height: 25rem; // 400px
+}
+.h-hero {
+    height: 30rem; // 480px
+}
+.h-card {
+    height: auto;
+
+    @include media-breakpoint-up(md) {
+        height: 21.875rem; // 350px
+    }
+}
+.h-avatar {
+    width: 8rem; // 128px
+    height: auto;
+}
+
+.h-recommend {
+    //height: auto;
+    height: 21.5625rem; // 345px
+
+    @include media-breakpoint-up(md) {
+        height: 21.875rem; // 350px
+    }
+}
+
+.w-recommend {
+    width: 100% !important;
+
+    @include media-breakpoint-up(md) {
+        width: 21.875rem !important; // 350px
+    }
+}
+.w-date {
+    width: 8rem;
+}
+.h-product-top {
+    height: 16rem; // 256px
+}
+.h-product-banner {
+    height: 25rem; // 400px
+}
+.h-product-pic {
+    height: 35rem; // 560px
+}
+.w-input-amount {
+    width: 1.5rem !important; //24px
+
+    @include media-breakpoint-up(md) {
+        width: 3rem !important; //48px
+    }
+}
+
+.h-cart-thumb {
+    height: 7.5rem; // 120px
+    width: 7.5rem; // 120px
+}
+.h-order-thumb {
+    height: 5.25rem; // 84px
+}

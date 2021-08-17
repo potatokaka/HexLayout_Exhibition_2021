@@ -1,0 +1,24 @@
+.progress-dot {
+    // 空心圓點
+    &::before {
+        content: "";
+        width: 0.5rem; // 8px
+        height: 0.5rem; // 8px
+        border: 2px solid $secondary;
+        background: white;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: -0.75rem; // -12px (-8px - 高度 8px/2)
+        transform: translate-x(-50%);
+
+    }
+    // 實心圓點
+    &.solid::before {
+        background: $secondary;
+    }
+
+    &.active {
+        font-weight: 500;
+    }
+}

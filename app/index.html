@@ -1,254 +1,184 @@
 ---
 title: Boostrap Index
-layout: ./app/layout.ejs
+layout: ./app/layout-index.ejs
 engine: ejs
 current: index
 ---
-
-<div class="container">
-	<header class="d-flex justify-content-between align-items-center mb-11">
-		<div class="d-flex">
-			<h2 class="h4 me-12 fw-bold">Assignment-展覽</h2>
-			<!-- Dropdown -->
-			<div class="dropdown d-flex align-items-center">
-				<a class="dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-					<p class="me-2">All Courses</p>
-					<i class="material-icons text-primary">expand_more</i>
-				</a>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-					<li><a class="dropdown-item" href="#">Action</a></li>
-					<li><a class="dropdown-item" href="#">Another action</a></li>
-					<li><a class="dropdown-item" href="#">Something else here</a></li>
-				</ul>
-			</div><!-- .dropdown -->
+<!-- Hero Banner -->
+<div class="bg bg-hero bg-cover h-hero">
+	<div class="container h-100">
+		<div class="row h-100 d-flex flex-column justify-content-end justify-content-md-center text-white">
+			<div class="col-md-11 offset-md-1">
+				<h2 class="h3 mb-3">台北當代藝術展</h2>
+				<p class="fw-bold fs-6 mb-7 ">01 JUN - 31 OCT</p>
+				<div class="d-flex list-unstyled mb-25 mb-md-0">
+					<a href="./product.html" class="btn btn-secondary py-4 px-17 me-7 me-md-3 w-50 w-md-auto">購買票券</a>
+					<a href="./product.html" class="btn btn-outline-light py-4 px-17 me-0 w-50 w-md-auto">詳細資訊</a>
+				</div>
+			</div>
 		</div>
-		<ul class="d-flex align-items-center m-0">
-			<li class="list-unstyled me-6">
-				<a href="#">
-					<i class="material-icons">search</i>
-				</a>
-			</li>
-			<li class="list-unstyled me-0">
-				<a href="#">
-					<i class="material-icons">notifications_active</i>
-				</a>
-			</li>
-		</ul>
-	</header>
-
-	<div class="d-flex justify-content-between align-items-center mb-2">
-		<!-- Dropdown -->
-		<div class="dropdown d-flex align-items-center">
-			<a class="dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-				<p class="me-2">All (4)</p>
-				<i class="material-icons text-primary">expand_more</i>
-			</a>
-			<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-				<li><a class="dropdown-item" href="#">Action</a></li>
-				<li><a class="dropdown-item" href="#">Another action</a></li>
-				<li><a class="dropdown-item" href="#">Something else here</a></li>
-			</ul>
-		</div><!-- .dropdown -->
-		<div class="fs-8 text-gray-600">2 comments</div>
 	</div>
-
-	<div class="row">
-		<div class="col-12 col-md-4">
-			<div class="list-group" id="list-tab" role="tablist">
-				<a class="list-group-item list-group-item-action active" id="list-homework1-list" data-bs-toggle="list" href="#list-homework1" role="tab" aria-controls="list-homework1">
-					<div class="d-flex justify-content-between align-items-center fs-8">
-						<span>Chapter Assignment 2</span>
-						<small>4 hrs ago</small>
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<h3 class="h6">Please check this file…</h3>
-						<small class="fs-8 text-gray-600">Emily Wang</small>
-					</div>
-				</a>
-				<a class="list-group-item list-group-item-action" id="list-homework2-list" data-bs-toggle="list" href="#list-homework2" role="tab" aria-controls="list-homework2">
-					<div class="d-flex justify-content-between align-items-center fs-8">
-						<span>Chapter Assignment 1</span>
-						<small>12 hrs ago</small>
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<h3 class="h6">My Homework</h3>
-						<small class="fs-8 text-gray-600">David Xu</small>
-					</div>
-				</a>
-				<a class="list-group-item list-group-item-action" id="list-homework3-list" data-bs-toggle="list" href="#list-homework3" role="tab" aria-controls="list-homework3">
-					<div class="d-flex justify-content-between align-items-center fs-8">
-						<span>Final Assignment</span>
-						<small>18 hrs ago</small>
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<h3 class="h6">Have a problem with this…</h3>
-						<small class="fs-8 text-gray-600">Tony Wei</small>
-					</div>
-				</a>
-				<a class="list-group-item list-group-item-action" id="list-homework4-list" data-bs-toggle="list" href="#list-homework4" role="tab" aria-controls="list-homework4">
-					<div class="d-flex justify-content-between align-items-center fs-8">
-						<span>Final Assignment</span>
-						<small>19 hrs ago</small>
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<h3 class="h6">Did I do it right?</h3>
-						<small class="fs-8 text-gray-600">Christina Lin</small>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="col-12 col-md-8">
-			
-			<div class="tab-content" id="nav-tabContent">
-				<!-- Tab 1 -->
-				<div class="tab-pane fade show active" id="list-homework1" role="tabpanel" aria-labelledby="list-homework1-list">
-					<div class="card mb-4">
-						<div class="card-header d-flex justify-content-between align-items-center">
-							<div>
-								<small class="fs-8">Chapter Assignment 2 / HTML&CSS</small>
-								<h3 class="h6">Please check this file for me, thanks!</h3>
-							</div>
-							<i class="material-icons">more_vert</i>
-						</div>
-						<div class="card-body">
-							<div class="d-flex justify-content-start align-items-center mb-4">
-								<div class="d-flex align-items-center">
-									<div class="flex-shrink-0">
-									  <img class="avatar rounded-circle" src="./assets/images/emilywang.jpeg" alt="avatar">
-									</div>
-									<div class="flex-grow-1 ms-2">
-										<h4 class="fs-6 fw-bold mb-1">Andy Chen</h4>
-										<small class="fs-8 text-gray-600">10:38 AM (4 hours ago)</small>
-									</div>
-								</div>
-							</div>
-							<div class="card-text mt-1 ms-12 fs-7">
-								<p class="mb-4">
-									Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the <span class="badge bg-light text-primary fs-7">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. 
-								</p>
-								<p class="mb-4">	
-									What is the gap or extra space below image?
-								</p>
-								<a href="#" download="HW-2-David.zip" class="btn btn-light border-gray-400 px-4 py-2 d-inline-flex align-items-center justify-content-start">
-									<i class="material-icons me-2">attachment</i>
-									<span>HW-2-David.zip</span>
-								</a>
-							</div>
-						</div><!-- .card-body -->
-						
-						<!-- Divider -->
-						<hr class="mt-0 mb-0 me-4 ms-16 border-top border-gray-400"></hr>
-
-						<!-- CK Editor -->
-						<div class="editorWrap mt-3">
-							<div id="editor" class="editor">
-								<p>Reply an answer…</p>
-							</div>
-						</div><!-- .editorWrap -->
-
-						<div class="card-body">
-							<div class="d-flex justify-content-between align-items-center mb-4">
-								<div class="d-flex align-items-center">
-									<div class="flex-shrink-0">
-									  <img class="avatar rounded-circle" src="./assets/images/andychen.jpeg" alt="avatar">
-									</div>
-									<div class="flex-grow-1 ms-2">
-										<h4 class="fs-6 fw-bold mb-1">Andy Chen(You)</h4>
-										<small class="fs-8 text-gray-600">10:38 AM (4 hours ago)</small>
-									</div>
-								</div>
-								<ul class="d-flex align-items-center list-unstyled">
-									<li class="me-6">
-										<a href="#">
-											<i class="material-icons-outlined">star_rate</i>
-										</a>
-									</li>
-									<li class="me-0">
-										<a href="#">
-											<i class="material-icons">edit</i>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="card-text mt-1 ms-12 fs-7">
-								<p class="mb-4">
-									Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. 
-								</p>
-								<p class="mb-4">You can: </p>
-								<ul>
-									<li>
-										adjust the <span class="badge bg-light text-primary fs-7">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="badge bg-light text-primary fs-7">middle</span> ) or
-									</li>
-									<li>
-										change the <span class="badge bg-light text-primary fs-7">display</span> so it isn’t inline.
-									</li>
-								</ul>
-							</div>
-						</div><!-- .card-body -->
-
-					</div><!-- .card -->
-					
-					<!-- Bottom Buttons -->
-					<div class="d-flex justify-content-between align-items-center">
-						<ul class="d-flex align-items-center list-unstyled">
-							<li class="me-6">
-								<a href="#">
-									<i class="material-icons">chevron_left</i>
-								</a>
-							</li>
-							<li class="me-0">
-								<a href="#">
-									<i class="material-icons">chevron_right</i>
-								</a>
-							</li>
-						</ul>
-						<ul class="d-flex align-items-center list-unstyled">
-							<li class="me-4">
-								<a href="#" class="btn btn-outline-primary">Mark as read</a>
-							</li>
-							<li class="me-0">
-								<a href="#" id="btn-reply" class="btn btn-primary">Reply</a>
-							</li>
-						</ul>
-					</div>
-
-				</div><!-- .tab-pane -->
-
-				<!-- Tab 2 -->
-				<div class="tab-pane fade" id="list-homework2" role="tabpanel" aria-labelledby="list-homework2-list">2.</div>
-				<!-- Tab 3 -->
-				<div class="tab-pane fade" id="list-homework3" role="tabpanel" aria-labelledby="list-homework3-list">3.</div>
-				<!-- Tab 4 -->
-				<div class="tab-pane fade" id="list-homework4" role="tabpanel" aria-labelledby="list-homework4-list">4.</div>
-			</div>
-		</div>
-	</div><!-- .row -->
-
 </div>
 
-<!-- Button trigger modal -->
+<!-- Navigation -->
+<div class="nav-scroller d-flex justify-content-md-center border border-gray-600">
+	<ul class="nav">
+		<li class="nav-item">
+			<a class="nav-link" aria-current="page" href="#">音樂</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">戲劇</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="./category-design.html">設計</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">藝術</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">美食</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">旅遊</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">電影</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">親子</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">期間限定</a>
+		</li>
+	</ul>
+</div>
 
-<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button> -->
+<!-- Features -->
+<section class="mt-9 mt-md-20">
+	<div class="container">
+		<h3 class="h3 mb-3 mb-md-11">熱門特展</h3>
+		<ul class="list-unstyled">
+			<li class="mb-7 mb-md-9">
+				<div class="card bg-gray-200">
+					<div class="row g-0">
+						<div class="col-md-4 h-card">
+							<img src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" class="object-fit" alt="feature1">
+						</div>
+						<div class="col-md-6">
+							<div class="card-body px-md-11 py-md-15 d-flex flex-column h-100">
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h5>
+										2020 台味設計展 <i class="bi bi-facebook d-md-none"></i>
+									</h5>
+									<span class="d-md-none fs-8 fw-normal">01 JUN — 31 OCT</span>
+								</div>
+								<p class="fs-6 mb-3 ff-roboto">$350</p>
+								<p class="card-text fs-6 mb-9">一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+								<ul class="d-flex list-unstyled mt-auto">
+									<li class="me-3">
+										<a href="./product.html" class="btn btn-primary py-4 px-7">購買票券</a>
+									</li>
+									<li class="me-0">
+										<a href="#" class="btn btn-outline-primary py-4 px-7">收藏展覽</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-1 offset-md-1 px-md-11 py-md-15 d-none d-md-flex flex-column justify-content-between">
+							<p class="fs-6 word-spacing-md-xl">01 JUN | 31 OCT</p>
+							<i class="bi bi-facebook"></i>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="mb-7 mb-md-9">
+				<div class="card bg-gray-200">
+					<div class="row g-0">
+						<div class="col-md-4 h-card">
+							<img src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" class="object-fit" alt="feature1">
+						</div>
+						<div class="col-md-6">
+							<div class="card-body px-md-11 py-md-15 d-flex flex-column h-100">
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h5>
+										No.22 線上設計展 <i class="bi bi-facebook d-md-none"></i>
+									</h5>
+									<span class="d-md-none fs-8 fw-normal">01 JUN — 31 OCT</span>
+								</div>
+								<p class="fs-6 mb-3 ff-roboto">$350</p>
+								<p class="card-text fs-6 mb-9">這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。</p>
+								<ul class="d-flex list-unstyled mt-auto">
+									<li class="me-3">
+										<a href="./product.html" class="btn btn-primary py-4 px-7">購買票券</a>
+									</li>
+									<li class="me-0">
+										<a href="#" class="btn btn-outline-primary py-4 px-7">收藏展覽</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-1 offset-md-1 px-md-11 py-md-15 d-none d-md-flex flex-column justify-content-between">
+							<p class="fs-6 word-spacing-md-xl">01 JUN | 31 OCT</p>
+							<i class="bi bi-facebook"></i>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="mb-7 mb-md-9">
+				<div class="card bg-gray-200">
+					<div class="row g-0">
+						<div class="col-md-4 h-card">
+							<img src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" class="object-fit" alt="feature1">
+						</div>
+						<div class="col-md-6">
+							<div class="card-body px-md-11 py-md-15 d-flex flex-column h-100">
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h5>
+										高雄設計節 <i class="bi bi-facebook d-md-none"></i>
+									</h5>
+									<span class="d-md-none fs-8 fw-normal ">01 JUN — 31 OCT</span>
+								</div>
+								<p class="fs-6 mb-3 ff-roboto">$350</p>
+								<p class="card-text fs-6 mb-9">設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？</p>
+								<ul class="d-flex list-unstyled mt-auto">
+									<li class="me-3">
+										<a href="./product.html" class="btn btn-primary py-4 px-7">購買票券</a>
+									</li>
+									<li class="me-0">
+										<a href="#" class="btn btn-outline-primary py-4 px-7">收藏展覽</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-1 offset-md-1 px-md-11 py-md-15 d-none d-md-flex flex-column justify-content-between">
+							<p class="fs-6 word-spacing-md-xl">01 JUN | 31 OCT</p>
+							<i class="bi bi-facebook"></i>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
 
+	</div>
+</section>
 
-<!-- Modal -->
-
-<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div> -->
+<!-- Stream Video -->
+<section class="mt-11 mt-md-20">
+	<div class="container">
+		<h3 class="h3 mb-3 mb-md-11">直播回顧</h3>
+		<div class="row g-0 bg bg-cover bg-video text-white">
+			<div class="col-md-5 py-15 px-11 bg-info">
+				<h4 class="h4 mb-14">
+					開幕對談 
+					<span class="border-start ms-5 ps-5 fw-normal">藝術展演巡禮</span>
+				</h4>
+				<img class="h-avatar mb-5" src="./assets/images/people.png">
+				<h5 class="h6 mb-2 fw-normal">臺北現代聯合總監｜Ken Hsu</h5>
+				<p class="fs-6 mb-7">
+					獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。
+				</p>
+				<a href="#" class="btn btn-secondary py-4 px-14 mb-4 mb-md-0">點此觀看</a>
+			</div>
+		</div>
+	</div>
+</section>

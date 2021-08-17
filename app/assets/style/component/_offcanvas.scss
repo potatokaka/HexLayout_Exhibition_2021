@@ -1,0 +1,7 @@
+.offcanvas-end {
+    top: 5.1875rem !important; // 83 = 82px (Header Navbar) + 1px (border)
+    width: 100%;
+    @include media-breakpoint-up(md) { 
+        width: 33.75rem;
+    }
+}
