@@ -1,8 +1,9 @@
 ---
 title: Boostrap Index
-layout: ./app/layout-cart.ejs
+layout: ./app/layout-index.ejs
 engine: ejs
 current: cart-step2
+display: d-none
 ---
 
 <div class="container mt-9">
@@ -162,7 +163,7 @@ current: cart-step2
 					<div id="couponHelp" class="form-text text-primary fs-9 text-end">優惠碼已生效</div>
 				</div>
 
-				<p class="d-flex justify-content-between fw-medium mb-1 mb-md-2">
+				<!-- <p class="d-flex justify-content-between fw-medium mb-1 mb-md-2">
 					小計
 					<span class="fw-light">NT$1050</span>
 				</p>
@@ -173,7 +174,19 @@ current: cart-step2
 				<p class="d-flex justify-content-between fs-6">
 					總金額
 					<span>NT$1000</span>
-				</p>
+				</p> -->
+
+				<!-- 改成 dl 寫法 -->
+				<dl class="row mb-5">
+					<dt class="col-3 fw-medium">小計</dt>
+					<dd class="col-9 text-end fw-light">NT$1050</dd>
+
+					<dt class="col-3 fw-medium ">折扣</dt>
+					<dd class="col-9 text-end fw-light">-NT$50</dd>
+
+					<dt class="col-3 fs-6">總金額</dt>
+					<dd class="col-9 text-end fs-6 mb-0">NT$1000</dd>
+				</dl>
 				
 				<!-- <button type="submit" class="btn btn-primary">Submit</button> -->
 			  </form>

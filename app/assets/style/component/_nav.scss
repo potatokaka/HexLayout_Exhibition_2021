@@ -1,16 +1,10 @@
 .nav-scroller {
-    // position: relative;
-    // z-index: 2;
-    // height: 2.75rem;
     overflow-y: hidden;
 }
 .nav-scroller .nav {
     display: flex;
     flex-wrap: nowrap;
-    // padding-bottom: 1rem;
-    // margin-top: -1px;
     overflow-x: auto;
-    // text-align: center;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
 }
@@ -25,5 +19,12 @@
 
     &:hover, &.active {
         border-bottom: 1px solid $tertiary;
+    }
+}
+
+.link-gray {
+    color: $gray-600;
+    &:hover {
+        color: darken($gray-600, 80%);
     }
 }

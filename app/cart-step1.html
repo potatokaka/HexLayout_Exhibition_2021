@@ -1,8 +1,9 @@
 ---
 title: Boostrap Index
-layout: ./app/layout-cart.ejs
+layout: ./app/layout-index.ejs
 engine: ejs
 current: cart-step1
+display: d-none
 ---
 
 <div class="container mt-9 h-cart">
@@ -142,15 +143,23 @@ current: cart-step1
 
 <!-- Buttons -->
 <div class="container position-fixed bottom-0 start-50 translate-middle-x bg-white">
-	<div class="row justify-content-between align-items-end mb-15">
+	<div class="row justify-content-between align-items-end mb-15 g-7 g-md-12">
 		<div class="col-6 col-md-2">
 			<a class="btn btn-outline-primary w-100 py-4 invisible" href="#">返回</a>
 		</div>
 		<div class="col-6 col-md-4">
-			<p class="d-flex justify-content-between fs-6 mb-5">
+
+			<!-- <p class="d-flex justify-content-between fs-6 mb-5">
 				小計
 				<span>NT$1050</span>
-			</p>
+			</p> -->
+
+			<!-- 改成 dl 寫法 -->
+			<dl class="row mb-5 g-0">
+				<dt class="col-6 fs-6">小計</dt>
+				<dd class="col-6 text-end fs-6 mb-0">NT$1050</dd>
+			</dl>
+
 			<a class="btn btn-secondary w-100 py-4" href="./cart-step2.html">下一步</a>
 		</div>
 	</div>

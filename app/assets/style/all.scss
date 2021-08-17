@@ -1,26 +1,17 @@
 @import "../../../node_modules/bootstrap/scss/functions";
-// @import "./helpers/mixin";
 @import "./helpers/variables";
 @import "./helpers/utilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 @import "./base/base";
-@import "./layout/layout";
-// @import "./helpers/containers";
 @import "./helpers/sizing";
 @import "./helpers/background";
 
+@import "./component/navbar";
 @import "./component/nav";
-@import "./component/dropdown";
 @import "./component/list-group";
-@import "./component/card";
-@import "./component/table";
-@import "./component/pagination";
-@import "./component/modal";
 @import "./component/form";
 @import "./component/offcanvas";
 @import "./component/progress";
 
 @import "./vendor/swiper";
-
-@import './layout/index.scss'

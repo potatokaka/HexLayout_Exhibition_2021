@@ -1,8 +1,9 @@
 ---
 title: Boostrap Index
-layout: ./app/layout-cart.ejs
+layout: ./app/layout-index.ejs
 engine: ejs
 current: cart-step3
+display: d-none
 ---
 
 <div class="container mt-9">
@@ -149,25 +150,23 @@ current: cart-step3
 				</div>
 				<div class="mb-9">
 					<label for="inputDateValid" class="form-label mb-1">有效日期</label>
-					<input type="number" class="form-control" id="inputDateValid" aria-describedby="DateValidHelp" placeholder="(MM/YY)">
+					<input type="date" class="form-control" id="inputDateValid" aria-describedby="DateValidHelp" placeholder="(MM/YY)">
 				</div>
 				<div class="mb-18">
 					<label for="inputCVV" class="form-label mb-1">安全碼</label>
 					<input type="password" class="form-control" id="inputCVV" aria-describedby="CVVHelp" placeholder="***">
 				</div>
 
-				<p class="d-flex justify-content-between fw-medium mb-1 mb-md-2">
-					小計
-					<span class="fw-light">NT$1050</span>
-				</p>
-				<p class="d-flex justify-content-between fw-medium mb-3 mb-md-2">
-					折扣
-					<span class="fw-light">-NT$50</span>
-				</p>
-				<p class="d-flex justify-content-between fs-6">
-					總金額
-					<span>NT$1000</span>
-				</p>
+				<dl class="row mb-5">
+					<dt class="col-3 fw-medium">小計</dt>
+					<dd class="col-9 text-end fw-light">NT$1050</dd>
+
+					<dt class="col-3 fw-medium ">折扣</dt>
+					<dd class="col-9 text-end fw-light">-NT$50</dd>
+
+					<dt class="col-3 fs-6">總金額</dt>
+					<dd class="col-9 text-end fs-6 mb-0">NT$1000</dd>
+				</dl>
 
 			  </form>
 		</div><!-- .col-md-4 -->
