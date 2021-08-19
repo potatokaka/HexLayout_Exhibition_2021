@@ -27,6 +27,9 @@
 	<!-- Swiper -->
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -161,13 +164,13 @@
 	
 	<main class="main">
 		<!-- Hero Banner -->
-<div class="bg bg-hero bg-cover h-hero">
+<div class="bg bg-hero bg-cover h-hero bg-fixed">
 	<div class="container h-100">
 		<div class="row h-100 d-flex flex-column justify-content-end justify-content-md-center text-white">
 			<div class="col-md-11 offset-md-1">
-				<h2 class="h3 mb-3">台北當代藝術展</h2>
-				<p class="fw-bold fs-6 mb-7 ">01 JUN - 31 OCT</p>
-				<div class="d-flex list-unstyled mb-25 mb-md-0">
+				<h2 class="h3 mb-3" data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1000">台北當代藝術展</h2>
+				<p class="fw-bold fs-6 mb-7" data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1300">01 JUN - 31 OCT</p>
+				<div class="d-flex list-unstyled mb-25 mb-md-0" data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1400">
 					<a href="./product.html" class="btn btn-secondary py-4 px-17 me-7 me-md-3 w-50 w-md-auto">購買票券</a>
 					<a href="./product.html" class="btn btn-outline-light py-4 px-17 me-0 w-50 w-md-auto">詳細資訊</a>
 				</div>
@@ -214,7 +217,8 @@
 	<div class="container">
 		<h3 class="h3 mb-3 mb-md-11">熱門特展</h3>
 		<ul class="list-unstyled">
-			<li class="mb-7 mb-md-9">
+
+			<li class="mb-7 mb-md-9" data-aos="fade-left">
 				<div class="card bg-gray-200">
 					<div class="row g-0">
 						<div class="col-md-4 h-card">
@@ -247,7 +251,8 @@
 					</div>
 				</div>
 			</li>
-			<li class="mb-7 mb-md-9">
+
+			<li class="mb-7 mb-md-9" data-aos="fade-right">
 				<div class="card bg-gray-200">
 					<div class="row g-0">
 						<div class="col-md-4 h-card">
@@ -280,7 +285,8 @@
 					</div>
 				</div>
 			</li>
-			<li class="mb-7 mb-md-9">
+
+			<li class="mb-7 mb-md-9"　data-aos="fade-left">
 				<div class="card bg-gray-200">
 					<div class="row g-0">
 						<div class="col-md-4 h-card">
@@ -319,7 +325,7 @@
 </section>
 
 <!-- Stream Video -->
-<section class="mt-11 mt-md-20">
+<section class="mt-11 mt-md-20" data-aos="flip-up" data-aos-duration="1300">
 	<div class="container">
 		<h3 class="h3 mb-3 mb-md-11">直播回顧</h3>
 		<div class="row g-0 bg bg-cover bg-video text-white">
@@ -342,12 +348,14 @@
 
 	<!-- Recommend: You may also like -->
 		<!-- 用 display 判斷是否要顯示該區塊 -->
-	<section class="mt-11 mt-md-20 ">
+	<section class="mt-11 mt-md-20 " >
 		<div class="container">
-			<h3 class="h3 mb-3 mb-md-11">猜你也喜歡...</h3>
+			<h3 class="h3 mb-3 mb-md-11" data-aos="fade-right">
+				猜你也喜歡...
+			</h3>
 
 			<!-- Swiper -->
-			<div class="row">
+			<div class="row" data-aos="fade-left">
 				<div class="col-md-11 offset-md-1">
 				
 					<div class="swiper-container mySwiper">
@@ -402,12 +410,14 @@
 
 	<!-- Subscribe -->
 		<!-- 用 display 判斷是否要顯示該區塊 -->
-	<div class="bg bg-subscribe bg-cover h-subscribe ">
+	<div class="bg bg-subscribe bg-cover h-subscribe bg-fixed ">
 		<div class="container h-100">
-			<div class="row h-100 d-flex align-items-end">
+			<div class="row h-100 d-flex align-items-end" >
 				<div class="col-md-4 pb-14">
 					<form>
-						<h3 class="h3 text-white mb-10 mb-md-5">想收到最新消息嗎？<br>快訂閱我們！</h3>
+						<h3 class="h3 text-white mb-10 mb-md-5">
+							想收到最新消息嗎？<br>快訂閱我們！
+						</h3>
 						<div class="input-group mb-3">
 							<input type="text" class="form-control p-5" placeholder="輸入您的電子信箱" aria-label="您的電子信箱" aria-describedby="button-addon2">
 							<button class="btn btn-secondary py-5 px-18" type="submit" id="button-addon2">訂閱</button>
@@ -440,14 +450,10 @@
 	<!-- Swiper JS -->
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	
-	<script src="./assets/js/all.js"></script>
-
 	<!-- AOS Animation-->
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-		AOS.init();
-	</script>
+	
+	<script src="./assets/js/all.js"></script>
 	
 </body>
 
