@@ -1,0 +1,6 @@
+.btn-white {
+    &:hover {
+        background: darken(white, 20%);
+        border-color: darken(white, 20%);
+    }
+}

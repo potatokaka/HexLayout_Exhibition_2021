@@ -45,7 +45,8 @@
     height: 35rem; // 560px
 }
 .w-input-amount {
-    width: 1.5rem !important; //24px
+    // width: 1.5rem !important; //24px
+    width: 2.8rem !important; 
 
     @include media-breakpoint-up(md) {
         width: 3rem !important; //48px
