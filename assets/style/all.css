@@ -22008,6 +22008,10 @@ a {
   transition: all .3s ease-in;
 }
 
+i {
+  display: block !important;
+}
+
 .h-subscribe {
   height: 25rem !important;
 }
@@ -22068,7 +22072,7 @@ a {
 }
 
 .w-input-amount {
-  width: 1.5rem !important;
+  width: 2.8rem !important;
 }
 
 @media (min-width: 768px) {
@@ -22189,6 +22193,11 @@ a {
   .offcanvas-end {
     width: 33.75rem;
   }
+}
+
+.btn-white:hover {
+  background: #cccccc;
+  border-color: #cccccc;
 }
 
 .progress-dot::before {
